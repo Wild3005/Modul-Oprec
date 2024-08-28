@@ -96,6 +96,35 @@ int main(){
     return 0;
 }
 ```
+##### Nested Loop
+contoh penggunaan:
+```C++
+#include<iostream>
+using namespace std;
+int main(){
+    int m,n;
+    cout << "membuat matrix" << endl;
+    cout << "masukkan baris:";
+    cin >> m;
+    cout << "masukkan colom:";
+    cin >> n;
+    int arr[m][n];
+    cout << "\nmasukkan nilai array anda:" << endl;
+    for(int i=0;i<m;i++){
+        for(int k=0;k<n;k++){
+            cin >> arr[i][k];
+        }
+    }
+    cout << "ini adalah matrix yang anda buat:" << endl;
+    for(int i=0;i<m;i++){
+        for(int k=0;k<n;k++){
+            cout <<  arr[i][k] << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+```
 ### -> Fungsi
 Contoh penggunaannya:
 #### Fungsi void
