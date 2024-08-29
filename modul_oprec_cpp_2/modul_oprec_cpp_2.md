@@ -1,4 +1,42 @@
 # Dasar Pemograman C++ OOP (Part2)
+### -> Vector
+**Vector** adalah salah satu tipe data yang disediakan oleh C++ dalam pustaka standar (STL - Standard Template Library). Vector adalah sejenis array dinamis yang ukurannya dapat berubah secara otomatis ketika elemen ditambahkan atau dihapus. Berbeda dengan array biasa yang memiliki ukuran tetap, vector bisa tumbuh dan menyusut sesuai kebutuhan.
+Contoh penggunaan:
+```C++
+#include <iostream>
+#include <vector> // Diperlukan untuk menggunakan vector
+
+int main() {
+    // Membuat vector untuk menyimpan bilangan bulat
+    std::vector<int> angka;
+
+    // Menambahkan elemen ke dalam vector
+    angka.push_back(10);
+    angka.push_back(20);
+    angka.push_back(30);
+
+    // Menampilkan elemen-elemen di dalam vector
+    std::cout << "Isi vector: ";
+    for (int i = 0; i < angka.size(); i++) {
+        std::cout << angka[i] << " ";
+    }
+    std::cout << std::endl;
+
+    // Mengakses elemen tertentu
+    std::cout << "Elemen pertama: " << angka[0] << std::endl;
+    std::cout << "Elemen terakhir: " << angka.back() << std::endl;
+
+    // Menghapus elemen terakhir
+    angka.pop_back();
+    std::cout << "Isi vector setelah penghapusan: ";
+    for (int i = 0; i < angka.size(); i++) {
+        std::cout << angka[i] << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
+```
 ### -> Struc
 **struc** dalam C++ adalah sebuah kata kunci yang digunakan untuk mendefinisikan sebuah struktur data yang dapat mengelompokkan beberapa variabel di bawah satu nama. Variabel-variabel tersebut, yang disebut sebagai anggota atau member dari struktur, bisa memiliki tipe data yang berbeda-beda.
 
@@ -307,6 +345,152 @@ int main() {
     // Memanggil metode untuk menampilkan informasi mahasiswa lulus
     mhs.tampilkanInfoLulus();
 
+    return 0;
+}
+```
+### -> (tambahan) try catch
+Dalam C++, try dan catch adalah bagian dari mekanisme penanganan exception yang digunakan untuk menangkap dan menangani kesalahan atau kondisi yang tidak diinginkan yang terjadi selama eksekusi program.
+Contoh penggunaan:
+```C++
+#include <iostream>
+using namespace std;
+
+int main() {
+    int pembilang, penyebut, hasil;
+
+    cout << "Masukkan pembilang: ";
+    cin >> pembilang;
+
+    cout << "Masukkan penyebut: ";
+    cin >> penyebut;
+
+    try {
+        if (penyebut == 0) {
+            throw "Error: Pembagian dengan nol tidak diperbolehkan.";
+        }
+
+        hasil = pembilang / penyebut;
+        cout << "Hasil: " << hasil << endl;
+    }
+    catch (const char* pesan) {
+        cout << pesan << endl;
+    }
+
+    return 0;
+}
+```
+### -> (Tambahan) Namespace dan Nested Namespace
+**Namespace** digunakan untuk mengelompokkan dan membedakan identitas atau nama yang digunakan dalam program, seperti variabe, fungsi, kelas,dll. ini juga digunakan untuk mengatur program agar tidak berbenturan dengan nama yang sama dari kode atau pustaka lain.
+Contoh penggunaan:
+```C++
+#include <iostream>
+using namespace std;
+
+namespace FirstNamespace {
+    void print() {
+        cout << "This is the first print function" << endl;
+    }
+}
+
+namespace SecondNamespace {
+    void print() {
+        cout << "This is the second print function" << endl;
+    }
+    namespace ThirdNmaespace{
+        void print(){
+            cout << "This is the third print function" << endl;
+        }
+    }
+}
+
+int main() {
+    // Memanggil print() dari FirstNamespace
+    FirstNamespace::print();
+
+    // Memanggil print() dari SecondNamespace
+    SecondNamespace::print();
+    
+    // Memanggil print() dari ThirdNmaespace
+    SecondNamespace::ThirdNmaespace::print();
+
+    return 0;
+}
+```
+### -> (Tambahan) Dot arrow
+##### Operasi titik atau Dot operation (.)
+Digunakan untuk mengakses anggota (seperti variabel atau fungsi) dari objek ketika kamu memiliki objek tersebut secara langsung, bukan pointer ke objek tersebut.
+##### Operasi panah atau Arrow operation (->)
+Digunakan untuk mengakses anggota dari objek yang direferensikan oleh sebuah pointer.
+
+Contoh penggunaan keduanya:
+```C++
+#include <iostream>
+
+class Car {
+public:
+    void setBrand(std::string newBrand) {
+        brand = newBrand;
+    }
+    
+    std::string getBrand() {
+        return brand;
+    }
+
+private:
+    std::string brand;
+};
+
+int main() {
+    // Menggunakan objek langsung
+    Car myCar;
+    myCar.setBrand("Toyota");
+    std::cout << "Brand of myCar: " << myCar.getBrand() << std::endl;
+
+    // Menggunakan pointer ke objek
+    Car *ptrCar = new Car();
+    ptrCar->setBrand("Honda");
+    std::cout << "Brand of ptrCar: " << ptrCar->getBrand() << std::endl;
+
+    // Membersihkan memori
+    delete ptrCar;
+
+    return 0;
+}
+```
+### -> (Tambahan) Enum
+**Enum** adalah tipe data yang memungkinkan kamu mendefinisikan sekelompok nama konstan dengan nilai integer yang terkait. Ini membantu membuat kode lebih mudah dibaca dan lebih terstruktur.
+
+Contoh penggunaan:
+```C++
+#include <iostream>
+
+enum Day { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday };
+
+int main() {
+    Day today = Wednesday;
+    
+    if (today == Wednesday) {
+        std::cout << "Today is Wednesday." << std::endl;
+    }
+    
+    return 0;
+}
+```
+### -> (Tambahan) Typedef
+**Typedef** digunakan untuk memberikan nama baru (alias) untuk tipe data yang ada. Ini membantu dalam meningkatkan keterbacaan kode dan menyederhanakan penggunaan tipe data yang kompleks.
+
+Contoh penggunaan:
+```C++
+#include <iostream>
+
+// Mendefinisikan alias untuk tipe data
+typedef unsigned long ulong;
+
+int main() {
+    ulong largeNumber = 1234567890;
+    
+    std::cout << "The large number is: " << largeNumber << std::endl;
+    
     return 0;
 }
 ```
