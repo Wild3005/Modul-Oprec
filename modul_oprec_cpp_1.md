@@ -63,6 +63,68 @@ int main(){
     return 0;
 }
 ```
+### -> if else condition
+##### if
+contoh penggunaan:
+```C++
+#include <iostream>
+
+int main() {
+    int a;
+    std::cin >> a;
+    if(a == 1){
+        std::cout << "anda memasukkan angka 1" << std::endl;
+    }
+    return 0;
+}
+```
+##### if else
+contoh penggunaan:
+```C++
+#include <iostream>
+
+int main() {
+    int a;
+    std::cin >> a;
+    if(a == 1){
+        std::cout << "anda memasukkan angka 1" << std::endl;
+    }else{
+        std::cout << "angka yang anda masukkan bukan angka 1" << std::endl;
+    }
+    return 0;
+}
+```
+##### if, else , else if
+contoh penggunaan:
+```C++
+#include <iostream>
+
+int main() {
+    int a;
+    std::cin >> a;
+    if(a == 1){
+        std::cout << "anda memasukkan angka 1" << std::endl;
+    }else if(a == 2){
+        std::cout << "anda memasukkan angka 2" << std::endl;
+    }else{
+        std::cout << "angka yang anda masukkan bukan angka 1 atau 2" << std::endl;
+    }
+    return 0;
+}
+```
+##### tambahan
+jika hanya ada 2 kodisi anda bisa mempersingkatnya
+contoh program:
+```C++
+#include <iostream>
+
+int main() {
+    int a;
+    std::cin >> a;
+    (a == 1)?std::cout << "angkanya 1" << std::endl : std::cout << "bukan 1" << std::endl;
+    return 0;
+}
+```
 ### -> Perulangan atau Looping
 ##### while()
 ```C++
@@ -258,7 +320,6 @@ int main() {
 ##### Variabel Global
 contoh penggunaan:
 ```C++
-// Online C++ compiler to run C++ program online
 #include <iostream>
 using namespace std;
 int a = 5;
