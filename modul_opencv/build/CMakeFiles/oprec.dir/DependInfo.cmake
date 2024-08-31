@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ichbinwil/folder_wildan/Modul-Oprec/modul_opencv/src/opencv_1.cpp" "/home/ichbinwil/folder_wildan/Modul-Oprec/modul_opencv/build/CMakeFiles/oprec.dir/src/opencv_1.cpp.o"
+  "/home/ichbinwil/folder_wildan/Modul-Oprec/modul_opencv/src/opencv_4_color_detect.cpp" "/home/ichbinwil/folder_wildan/Modul-Oprec/modul_opencv/build/CMakeFiles/oprec.dir/src/opencv_4_color_detect.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

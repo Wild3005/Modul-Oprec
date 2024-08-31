@@ -4,5 +4,17 @@ using namespace std;
 using namespace cv;
 
 int main(){
-    Videoe
+    VideoCapture kamera (0);
+    if(kamera.isOpened()){
+        cerr << "tidak bisa membuka" << endl;
+    }
+    cv::Mat frame;
+    while(true){
+        kamera >> frame;
+        imshow("kamera",frame);
+        if(waitKey(30)== 32){
+            break;
+        }
+    }
+
 }

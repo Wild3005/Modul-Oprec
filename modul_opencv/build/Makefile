@@ -123,32 +123,32 @@ oprec/fast:
 	$(MAKE) -f CMakeFiles/oprec.dir/build.make CMakeFiles/oprec.dir/build
 .PHONY : oprec/fast
 
-src/opencv_1.o: src/opencv_1.cpp.o
+src/opencv_4_color_detect.o: src/opencv_4_color_detect.cpp.o
 
-.PHONY : src/opencv_1.o
+.PHONY : src/opencv_4_color_detect.o
 
 # target to build an object file
-src/opencv_1.cpp.o:
-	$(MAKE) -f CMakeFiles/oprec.dir/build.make CMakeFiles/oprec.dir/src/opencv_1.cpp.o
-.PHONY : src/opencv_1.cpp.o
+src/opencv_4_color_detect.cpp.o:
+	$(MAKE) -f CMakeFiles/oprec.dir/build.make CMakeFiles/oprec.dir/src/opencv_4_color_detect.cpp.o
+.PHONY : src/opencv_4_color_detect.cpp.o
 
-src/opencv_1.i: src/opencv_1.cpp.i
+src/opencv_4_color_detect.i: src/opencv_4_color_detect.cpp.i
 
-.PHONY : src/opencv_1.i
+.PHONY : src/opencv_4_color_detect.i
 
 # target to preprocess a source file
-src/opencv_1.cpp.i:
-	$(MAKE) -f CMakeFiles/oprec.dir/build.make CMakeFiles/oprec.dir/src/opencv_1.cpp.i
-.PHONY : src/opencv_1.cpp.i
+src/opencv_4_color_detect.cpp.i:
+	$(MAKE) -f CMakeFiles/oprec.dir/build.make CMakeFiles/oprec.dir/src/opencv_4_color_detect.cpp.i
+.PHONY : src/opencv_4_color_detect.cpp.i
 
-src/opencv_1.s: src/opencv_1.cpp.s
+src/opencv_4_color_detect.s: src/opencv_4_color_detect.cpp.s
 
-.PHONY : src/opencv_1.s
+.PHONY : src/opencv_4_color_detect.s
 
 # target to generate assembly for a file
-src/opencv_1.cpp.s:
-	$(MAKE) -f CMakeFiles/oprec.dir/build.make CMakeFiles/oprec.dir/src/opencv_1.cpp.s
-.PHONY : src/opencv_1.cpp.s
+src/opencv_4_color_detect.cpp.s:
+	$(MAKE) -f CMakeFiles/oprec.dir/build.make CMakeFiles/oprec.dir/src/opencv_4_color_detect.cpp.s
+.PHONY : src/opencv_4_color_detect.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... oprec"
-	@echo "... src/opencv_1.o"
-	@echo "... src/opencv_1.i"
-	@echo "... src/opencv_1.s"
+	@echo "... src/opencv_4_color_detect.o"
+	@echo "... src/opencv_4_color_detect.i"
+	@echo "... src/opencv_4_color_detect.s"
 .PHONY : help
 
 

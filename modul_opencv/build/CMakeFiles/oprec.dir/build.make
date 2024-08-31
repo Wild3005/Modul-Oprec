@@ -57,27 +57,27 @@ include CMakeFiles/oprec.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/oprec.dir/flags.make
 
-CMakeFiles/oprec.dir/src/opencv_1.cpp.o: CMakeFiles/oprec.dir/flags.make
-CMakeFiles/oprec.dir/src/opencv_1.cpp.o: ../src/opencv_1.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ichbinwil/folder_wildan/Modul-Oprec/modul_opencv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/oprec.dir/src/opencv_1.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oprec.dir/src/opencv_1.cpp.o -c /home/ichbinwil/folder_wildan/Modul-Oprec/modul_opencv/src/opencv_1.cpp
+CMakeFiles/oprec.dir/src/opencv_4_color_detect.cpp.o: CMakeFiles/oprec.dir/flags.make
+CMakeFiles/oprec.dir/src/opencv_4_color_detect.cpp.o: ../src/opencv_4_color_detect.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ichbinwil/folder_wildan/Modul-Oprec/modul_opencv/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/oprec.dir/src/opencv_4_color_detect.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/oprec.dir/src/opencv_4_color_detect.cpp.o -c /home/ichbinwil/folder_wildan/Modul-Oprec/modul_opencv/src/opencv_4_color_detect.cpp
 
-CMakeFiles/oprec.dir/src/opencv_1.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oprec.dir/src/opencv_1.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ichbinwil/folder_wildan/Modul-Oprec/modul_opencv/src/opencv_1.cpp > CMakeFiles/oprec.dir/src/opencv_1.cpp.i
+CMakeFiles/oprec.dir/src/opencv_4_color_detect.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/oprec.dir/src/opencv_4_color_detect.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ichbinwil/folder_wildan/Modul-Oprec/modul_opencv/src/opencv_4_color_detect.cpp > CMakeFiles/oprec.dir/src/opencv_4_color_detect.cpp.i
 
-CMakeFiles/oprec.dir/src/opencv_1.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oprec.dir/src/opencv_1.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ichbinwil/folder_wildan/Modul-Oprec/modul_opencv/src/opencv_1.cpp -o CMakeFiles/oprec.dir/src/opencv_1.cpp.s
+CMakeFiles/oprec.dir/src/opencv_4_color_detect.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/oprec.dir/src/opencv_4_color_detect.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ichbinwil/folder_wildan/Modul-Oprec/modul_opencv/src/opencv_4_color_detect.cpp -o CMakeFiles/oprec.dir/src/opencv_4_color_detect.cpp.s
 
 # Object files for target oprec
 oprec_OBJECTS = \
-"CMakeFiles/oprec.dir/src/opencv_1.cpp.o"
+"CMakeFiles/oprec.dir/src/opencv_4_color_detect.cpp.o"
 
 # External object files for target oprec
 oprec_EXTERNAL_OBJECTS =
 
-oprec: CMakeFiles/oprec.dir/src/opencv_1.cpp.o
+oprec: CMakeFiles/oprec.dir/src/opencv_4_color_detect.cpp.o
 oprec: CMakeFiles/oprec.dir/build.make
 oprec: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.2.0
 oprec: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.2.0

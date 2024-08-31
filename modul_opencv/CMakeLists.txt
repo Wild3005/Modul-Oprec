@@ -4,7 +4,7 @@ project( oprec )
 
 find_package( OpenCV REQUIRED )
 
-add_executable( oprec src/opencv_1.cpp )
+add_executable( oprec src/opencv_4_color_detect.cpp )
 
 ##add_executable( oke1 src/progrobot.cpp )
 
