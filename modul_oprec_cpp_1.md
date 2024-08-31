@@ -78,7 +78,7 @@ int main() {
     return 0;
 }
 ```
-##### if else
+##### if, else
 contoh penggunaan:
 ```C++
 #include <iostream>
@@ -148,16 +148,6 @@ int main(){
     return 0;
 }
 ```
-### -> Penggunaan Using namespace
-Contoh penggunaannnya:
-```C++
-#include<iostream>
-using namespace std;
-int main(){
-    cout << "hello rival team" << endl;
-    return 0;
-}
-```
 ##### Nested Loop
 contoh penggunaan:
 ```C++
@@ -184,6 +174,16 @@ int main(){
         }
         cout << endl;
     }
+    return 0;
+}
+```
+### -> Penggunaan Using namespace
+Contoh penggunaannnya:
+```C++
+#include<iostream>
+using namespace std;
+int main(){
+    cout << "hello rival team" << endl;
     return 0;
 }
 ```
